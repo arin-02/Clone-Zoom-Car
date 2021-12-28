@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.writing{
+    list-style: none;
+    display: flex;
+    
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.right{
+    width:100%;
 }
+.left{
+    width: 30%;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sort-container {
+    background-color: white;
+    padding: 22px 20px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 0px 1px 1px #c5bfbf;
+    font-size: 15px;
 }
+.sort-container .filter-ctr {
+    margin-bottom: 26px;
 
-.App-link {
-  color: #61dafb;
+    
 }
+.active{
+    background-color: #10a310;
+}
+.list-items{
+    background-color: #e0e0e0;
+}
+.list{
+    color: black;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+.price{
+    position: sticky;
+    bottom: 100%;
+    
+}
+.price p{
+    font-size: large;
+    font-weight: 500;
+}
+.btn{
+    position: sticky;
+    top: 100%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+@media screen and (max-width:640px) {
+    
+    .filter-ctr{
+        overflow: scroll;
+    }
+}
+@media screen and (min-width:640px) {
+    
+    .filter-ctr{
+        display: flex;
+        justify-content: center;
+    }
 }
