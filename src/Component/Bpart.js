@@ -9,9 +9,9 @@ function Bpart() {
     const [page, setPage] = useState(0);
     console.log("items",items)
    
-    // useEffect(() => {
-    //     alert("WE CAN FILTER ON ONLY BASIS OF 'PRICE RANGE' and 'Car Types'");
-    // }, []);
+    useEffect(() => {
+        alert("WE CAN FILTER ON ONLY BASIS OF 'PRICE RANGE' and 'Car Types'");
+    }, []);
     console.log("updated"+page);
     const filtercars=(type,e)=>{
         e.preventDefault();
